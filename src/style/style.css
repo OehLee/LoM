@@ -171,7 +171,7 @@ line-height:21px;
 font-size:10pt;
 text-align:center;
 color:black;
-background:url(img/tiles/name_back.png);
+background:#ddd;
 
 transition: opacity 0.25s ease-in;
 opacity: 0;
@@ -183,7 +183,7 @@ opacity: 0;
 } 
  
 .map .loc .actname {
-background:url(img/tiles/actname_back.png);
+background:#aaa;
    opacity: 1;
 
 
