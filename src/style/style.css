@@ -130,6 +130,7 @@ height:32px;
 margin-top:-16px;
 margin-left:-16px;
 z-index:3;
+background:red;
 }
 
 .map .player img {
