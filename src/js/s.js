@@ -109,7 +109,7 @@ $('.playerstats','body').html(c);
 function drawMap(){
 	var c = '';
 	for (i in Locs){
-		var ts = 'top:' + Locs[i].y + 'px;left:'+Locs[i].x+'px;background:url(src/style/img/tiles/'+Locs[i].type+'.png)';
+		var ts = 'top:' + Locs[i].y + 'px;left:'+Locs[i].x+'px;';
 		
 		c+='<div id="'+i+'" class="loc" style="'+ts+'">';
 		
