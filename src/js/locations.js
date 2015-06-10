@@ -1,0 +1,26 @@
+var Locs = {
+																							
+0:	{	name	:"	0	", type	:	"town",	x	:	371	,	y	:	123	,	con	:	[1,18,19],	seed	:'	1234567890	'	},
+1:	{	name	:"	1	", type	:	"city",	x	:	465	,	y	:	172	,	con	:	[2,0,19,18],	seed	:'	1234567891	'	},
+2:	{	name	:"	2	", type	:	"town",	x	:	574	,	y	:	115	,	con	:	[3,1],	seed	:'	1234567892	'	},
+3:	{	name	:"	3	", type	:	"city",	x	:	570	,	y	:	213	,	con	:	[4,2],	seed	:'	1234567893	'	},
+4:	{	name	:"	4	", type	:	"castle",	x	:	607	,	y	:	299	,	con	:	[5,3],	seed	:'	1234567894	'	},
+5:	{	name	:"	5	", type	:	"castle",	x	:	742	,	y	:	380	,	con	:	[6,4],	seed	:'	1234567895	'	},
+6:	{	name	:"	6	", type	:	"city",	x	:	670	,	y	:	431	,	con	:	[5,7,21],	seed	:'	1234567896	'	},
+7:	{	name	:"	7	", type	:	"town",	x	:	702	,	y	:	510	,	con	:	[8,6],	seed	:'	1234567897	'	},
+8:	{	name	:"	8	", type	:	"town",	x	:	797	,	y	:	541	,	con	:	[9,7],	seed	:'	1234567898	'	},
+9:	{	name	:"	9	", type	:	"city",	x	:	811	,	y	:	607	,	con	:	[10,8],	seed	:'	1234567899	'	},
+10:	{	name	:"	10	", type	:	"town",	x	:	701	,	y	:	638	,	con	:	[11,9],	seed	:'	1234567900	'	},
+11:	{	name	:"	11	", type	:	"city",	x	:	552	,	y	:	573	,	con	:	[12,10],	seed	:'	1234567901	'	},
+12:	{	name	:"	12	", type	:	"castle",	x	:	445	,	y	:	597	,	con	:	[11,13,20],	seed	:'	1234567902	'	},
+13:	{	name	:"	13	", type	:	"town",	x	:	334	,	y	:	615	,	con	:	[14,12],	seed	:'	1234567903	'	},
+14:	{	name	:"	14	", type	:	"town",	x	:	320	,	y	:	525	,	con	:	[13,15,16,20],	seed	:'	1234567904	'	},
+15:	{	name	:"	15	", type	:	"town",	x	:	224	,	y	:	597	,	con	:	[14],	seed	:'	1234567905	'	},
+16:	{	name	:"	16	", type	:	"castle",	x	:	282	,	y	:	367	,	con	:	[14,17],	seed	:'	1234567906	'	},
+17:	{	name	:"	17	", type	:	"city",	x	:	347	,	y	:	341	,	con	:	[18,16],	seed	:'	1234567907	'	},
+18:	{	name	:"	18	", type	:	"city",	x	:	344	,	y	:	233	,	con	:	[0,1,19,17],	seed	:'	1234567908	'	},
+19:	{	name	:"	19	", type	:	"castle",	x	:	462	,	y	:	275	,	con	:	[0,1,18,21],	seed	:'	1234567909	'	},
+20:	{	name	:"	20	", type	:	"town",	x	:	427	,	y	:	494	,	con	:	[12,14,21],	seed	:'	1234567910	'	},
+21:	{	name	:"	21	", type	:	"city",	x	:	538	,	y	:	392	,	con	:	[6,19,20],	seed	:'	1234567911	'	},
+
+};
