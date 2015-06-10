@@ -70,7 +70,7 @@ z-index:3;
 }
 
 .win {
-background:url(https://cloud.githubusercontent.com/assets/12827532/8080000/07e722b2-0f69-11e5-92ee-f1169828b75d.jpg);
+background:#ccc;
 z-index:2;
 color:white;
 box-shadow:0 0 1px 1px black,
@@ -115,7 +115,7 @@ width:auto;
 height:auto;
 border:35px solid transparent;
 border-image:url('img/border_map.png') 35 35 stretch;
-background:url(img/map.jpg);
+background:url(https://cloud.githubusercontent.com/assets/12827532/8080000/07e722b2-0f69-11e5-92ee-f1169828b75d.jpg);
 background-clip:content-box;
 color:black;
 
