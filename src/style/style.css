@@ -1,0 +1,471 @@
+html{
+position:absolute;
+top:0px;
+left:0px;
+width:100%;
+height:100%;
+margin:0;
+padding:0;
+background:black;
+overflow:hidden;
+}
+body{
+position:absolute;
+top:0px;
+left:0px;
+width:100%;
+height:100%;
+margin:0;
+padding:0;
+background:black;
+overflow:hidden;
+}
+@font-face {
+font-family: TT;
+src: url('fonts/Leander.ttf');
+}
+
+*{
+padding:0;
+margin:0;
+font-family: TT;
+}
+
+.menu {
+position:absolute;
+top:55px;
+left:35px;
+color:#735e33;
+text-shadow:0px 1px 1px rgba(0,0,0,0.25);
+text-align:center;
+line-height:20px;
+text-transform:uppercase;
+font-size:8pt;
+float:left;
+
+z-index:4;
+
+}
+.menu .menu_item {
+position:relative;
+top:0px;
+left:0px;
+height:20px;
+width:100px;
+margin-right:10px;
+color:#735e33;
+text-shadow:0px 1px 1px rgba(0,0,0,0.25);
+text-align:center;
+line-height:20px;
+text-transform:uppercase;
+font-size:8pt;
+float:left;
+background:#d2b985;
+box-shadow:
+0 0 0 1px #c5ac78,
+0 0 0 2px #735e33,
+inset 0 0 0 2px #957228;
+border-radius:3px;
+z-index:3;
+}
+
+.win {
+background:url(img/main_back.png);
+z-index:2;
+color:white;
+box-shadow:0 0 1px 1px black,
+inset 0 0 2px 3px black;
+border-radius:1px;
+}
+.win .header {
+position:absolute;
+top:6px;
+left:6px;
+right:6px;
+width:auto;
+height:20px;
+line-height:20px;
+
+}
+.win .cont {
+position:absolute;
+top:26px;
+bottom:0px;
+left:6px;
+right:6px;
+width:auto;
+height:auto;
+color:black;
+}
+.mapcont {
+position:absolute;
+top:0px;
+left:0px;
+width:100%;
+height:100%;
+overflow:hidden;
+z-index:1;
+background:url(img/map_cont_back.jpg);
+}
+.map {
+position:absolute;
+top:0px;
+left:0px;
+width:auto;
+height:auto;
+border:35px solid transparent;
+border-image:url('img/border_map.png') 35 35 stretch;
+background:url(img/map.jpg);
+background-clip:content-box;
+color:black;
+
+}
+
+.map .player {
+position:absolute;
+top:0px;
+left:0px;
+width:32px;
+height:32px;
+margin-top:-16px;
+margin-left:-16px;
+z-index:3;
+}
+
+.map .player img {
+position:absolute;
+top:0px;
+left:0px;
+width:32px;
+height:32px;
+  animation-name: example;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+	 animation-direction: alternate;
+	 animation-timing-function: ease-in-out;
+}
+@keyframes example {
+    from {top:0px;left:0px;width:32px;height:32px;}
+    to {top:4px;left:4px;width:24px;height:24px;}
+}
+
+.map .loc {
+position:absolute;
+top:0px;
+left:0px;
+width:32px;
+height:32px;
+margin-top:-16px;
+margin-left:-16px;
+z-index:3;
+
+}
+.map .loc .name {
+position:absolute;
+top:-24px;
+left:-32px;
+width:96px;
+height:21px;
+line-height:21px;
+font-size:10pt;
+text-align:center;
+color:black;
+background:url(img/tiles/name_back.png);
+
+transition: opacity 0.25s ease-in;
+opacity: 0;
+}
+
+.map .loc:hover .name{
+   opacity: 1;
+
+} 
+ 
+.map .loc .actname {
+background:url(img/tiles/actname_back.png);
+   opacity: 1;
+
+
+}
+
+.map canvas {
+position:absolute;
+top:0px;
+left:0px;
+}
+
+.mapcontrols{
+position:absolute;
+top:0px;
+right:150px;
+width:200px;
+height:50px;
+background:#63483d;
+box-shadow:0 0 1px 2px #ad5c3c;
+color:black;
+z-index:5;
+padding:5px;
+}
+
+.loc_display{
+position:absolute;
+top:10%;
+left:10%;
+width:800px;
+height:500px;
+background:#63483d;
+box-shadow:0 0 1px 2px #ad5c3c;
+border-radius:3px;
+z-index:4;
+opacity:0;
+}
+.loc_display .header{
+position:absolute;
+top:5px;
+left:5px;
+width:787px;
+height:110px;
+line-height:110px;
+font-size:48pt;
+color:#e9b072;
+text-shadow:0 0 5px #633d17;
+text-align:center;
+
+
+}
+
+.loc_display .loc_view{
+position:absolute;
+top:110px;
+left:0px;
+height:100px;
+width:100%;
+background:black;
+overflow:hidden;
+}
+
+.loc_display .loc_view .building{
+position:relative;
+width:75px;
+height:75px;
+margin-right:5px;
+float:left;
+
+}
+
+.loc_display .loc_view .building .name{
+position:absolute;
+top:0px;
+left:0px;
+width:100%;
+height:10px;
+background:black;
+color:white;
+display:none;
+}
+.loc_display .loc_view .building:hover .name{
+display:block;
+}
+
+
+.loc_display .build_content {
+position:absolute;
+top:220px;
+left:50px;
+height:150px;
+width:650px;
+background:rgba(0,0,0,0.25);
+border-radius:3px;
+box-shadow:0 0 2px black;
+}
+.loc_display .build_content .item{
+position:relative;
+top:0px;
+left:0px;
+height:25px;
+width:100%;
+
+border-bottom:1px solid white;
+color:white;
+}
+.loc_display .build_content .item > div{
+position:relative;
+top:0px;
+left:0px;
+height:25px;
+width:150px;
+border-right:1px solid white;
+float:left;
+text-align:center;
+line-height:25px;
+}
+.loc_display .build_content .item .buyit{
+position:absolute;
+top:0px;
+right:0px;
+left:auto;
+height:25px;
+width:25px;
+background:red;
+line-height:25px;
+}
+
+.loc_display .exit {
+position:absolute;
+right:50px;
+bottom:25px;
+width:75px;
+height:50px;
+line-height:50px;
+text-align:center;
+background:#ae8033;
+}
+
+
+.clock{
+position:absolute;
+top:0px;
+right:0px;
+width:100px;
+height:50px;
+color:white;
+background:#63483d;
+box-shadow:0 0 1px 2px #ad5c3c;
+z-index:5;
+padding:5px;
+}
+
+.playerstats {
+position:absolute;
+bottom:0px;
+left:0px;
+height:146px;
+width:280px;
+background:url(img/playerstats_back.png);
+color:black;
+z-index:5;
+}
+.playerstats_name {
+position:absolute;
+top:0px;
+left:0px;
+width:200px;
+height:10px;
+line-height:10px;
+font-size:10px;
+}
+.playerstats_lvl {
+position:absolute;
+top:28px;
+left:30px;
+width:55px;
+height:55px;
+
+border-radius:50px;
+box-shadow:0 0 1px 0px black;
+background:rgba(0,0,0,0.1);
+overflow:hidden;
+}
+
+.playerstats_lvl p  {
+position:absolute;
+top:0px;
+left:0px;
+width:100%;
+line-height:50px;
+text-align:center;
+font-size:28pt;
+color:white;
+z-index:2;
+padding:0;
+margin:0;
+text-shadow:0 0 3px black;
+}
+.playerstats_lvl .playerstats_exp  {
+position:absolute;
+bottom:0px;
+top:auto;
+left:0px;
+height:100%;
+width:100%;
+background:green;
+box-shadow:0 0 1px 1px rgba(0,0,0,0.25);
+z-index:1;
+}
+
+.playerstats_hea {
+position:absolute;
+top:45px;
+left:95px;
+width:120px;
+height:10px;
+line-height:20px;
+font-size:10px;
+border-radius:1px;
+box-shadow:0 0 1px 0px black;
+color:white;
+overflow:hidden;
+}
+.playerstats_hea div {
+position:absolute;
+top:0px;
+left:0px;
+
+height:100%;
+line-height:20px;
+background:red;
+box-shadow:0 0 1px 3px rgba(0,0,0,0.25);
+}
+
+.history {
+position:absolute;
+bottom:0px;
+right:0px;
+height:106px;
+width:240px;
+background:url(img/history_back.png);
+z-index:5;
+line-height:10px;
+font-size:10pt;
+padding:20px;
+overflow-y:auto;
+overflow-x:hidden;
+display:none;
+}
+
+.help {
+position:absolute;
+top:0px;
+left:0px;
+width:50px;
+height:50px;
+background:#63483d;
+box-shadow:0 0 1px 2px #ad5c3c;
+z-index:3;
+}
+.help div {
+position:absolute;
+top:50px;
+left:0px;
+width:250px;
+height:auto;
+color:white;
+background:#63483d;
+box-shadow:0 0 1px 2px #ad5c3c;
+display:none;
+}
+.help:hover div {
+display:block;
+}
+
+.export {
+position:absolute;
+top:0px;
+left:0px;
+width:100%;
+height:100%;
+color:black;
+background:white;
+z-index:100;
+overflow:scroll;
+}
